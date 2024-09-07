@@ -1,0 +1,35 @@
+#root{
+    background-color: rgba(152, 251, 201, 0.452);
+    height: 100vh;
+}
+#guy{
+    margin-left: 9px;
+    margin-bottom: 20px;
+}
+#dateFinContainer{
+    display: flex;
+    flex-direction: row;
+}
+#dateFin{
+    margin-left: 2px;
+}
+#btn{
+    margin-left: 8px;
+}
+#btn:hover{
+    background-color: rgba(0, 89, 255, 0.774);
+}
+#resultat{
+    text-align: center;
+    font-weight: 400;
+    height: 8vh;
+    margin-top: 3ex;
+    background-color: rgba(170, 170, 170, 0.514);
+}
+#title{
+    text-align: center;
+    padding: 10px 0;
+}
+#table{
+    text-align: center;
+}
