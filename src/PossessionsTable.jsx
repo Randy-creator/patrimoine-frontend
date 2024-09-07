@@ -21,7 +21,7 @@ const PossessionsTable = () => {
     const possesseur = new Personne("John Doe");
     async function fetchData() {
       try {
-        const response = await fetch("http://localhost:3000/possession");
+        const response = await fetch("https://patrimoine-backend-5ma3.onrender.com/possession");
         const result = await response.json();
         const possessions = result[1].data.possessions;
         const possessionList = [];
@@ -116,7 +116,7 @@ const PossessionsTable = () => {
   const handleUpdatePossession = () => {
     if (!selectedPossession) return;
 
-    fetch(`http://localhost:3000/possession/${selectedPossession.libelle}`, {
+    fetch(`https://patrimoine-backend-5ma3.onrender.com/possession/${selectedPossession.libelle}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

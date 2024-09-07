@@ -42,7 +42,7 @@ const Patrimoine = () => {
 
   const handleGetValeur = async () => {
     try {
-      const response = await fetch("http://localhost:3000/patrimoine/range", {
+      const response = await fetch("https://patrimoine-backend-5ma3.onrender.com/patrimoine/range", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
